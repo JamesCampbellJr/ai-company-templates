@@ -1,0 +1,19 @@
+# Base requirements shared across AI-Company project templates.
+# Kept deliberately lean. Add template-specific deps in each template's
+# requirements.txt (which `pip install -r requirements.txt` will include).
+
+# --- HTTP / serving (Flask template) ---
+flask>=3.0,<4.0
+gunicorn>=21.2,<23.0
+
+# --- Data apps (Streamlit template) ---
+streamlit>=1.30,<2.0
+pandas>=2.0,<3.0
+matplotlib>=3.7,<4.0
+
+# --- Automation (Python template) ---
+requests>=2.31,<3.0
+python-dotenv>=1.0,<2.0
+
+# --- Testing ---
+pytest>=7.4,<9.0
